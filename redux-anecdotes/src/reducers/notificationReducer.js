@@ -8,7 +8,9 @@ export const setNotification = content => {
     }
 }
 
-const reducer = (state = { label: '' }, action) => {
+const initialState = { label: '' }
+
+const reducer = (state = initialState, action) => {
   if (action.type === 'NOTIFICATION') {
     return action.content;
   } else {
