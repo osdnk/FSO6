@@ -1,4 +1,3 @@
-
 export const setNotification = content => {
   return {
       type: 'NOTIFICATION',
