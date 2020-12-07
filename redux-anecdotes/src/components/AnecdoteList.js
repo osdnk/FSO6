@@ -20,7 +20,7 @@ const AnecdoteList = ({ anecdotes, voteFor, setNotification }) => {
   ));
 };
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     anecdotes: state.anecdotes.filter(v => v.content.toLowerCase().includes(state.filter.toLowerCase()))
   }
